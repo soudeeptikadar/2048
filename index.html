@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>2048 Game</h1>
+        <div id="instructions">
+            <p>Use the arrow keys or swipe on your touchscreen to move the tiles.</p>
+            <p>Combine tiles with the same number to create higher values.</p>
+            <p>Try to reach 2048!</p>
+        </div>
+        <div id="score-container">
+            <span id="score-label">Score: </span>
+            <span id="score">0</span>
+        </div>
+        <div id="game-board">
+            <!-- Grid for the game -->
+        </div>
+        <button id="start-button">Start Game</button>
+        <button id="undo-button" class="hidden">Undo</button>
+        <div id="game-over" class="hidden">Game Over!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

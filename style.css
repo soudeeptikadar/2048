@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #d4a5a5; /* Dusky pink */
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#instructions {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#instructions p {
+    margin: 5px 0;
+}
+
+#score-container {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#score-label {
+    font-weight: bold;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    background-color: #cdc1b4;
+    color: #776e65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Tile Colors */
+.tile-2 { background-color: #eee4da; }
+.tile-4 { background-color: #ede0c8; }
+.tile-8 { background-color: #f2b179; }
+.tile-16 { background-color: #f59563; }
+.tile-32 { background-color: #f67c5f; }
+.tile-64 { background-color: #f65e3b; }
+.tile-128 { background-color: #edcf72; }
+.tile-256 { background-color: #edcc61; }
+.tile-512 { background-color: #edc850; }
+.tile-1024 { background-color: #edc53f; }
+.tile-2048 { background-color: #edc22e; }
+
+/* Hover Effect */
+.tile:hover {
+    background-color: #d4a5a5;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #d4a5a5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #b97a7a;
+}
+
+#game-over {
+    color: #d4a5a5;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .tile {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 0.8rem;
+    }
+}
